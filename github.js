@@ -11,6 +11,7 @@ profile.then(response => {
         info.innerHTML = 'Something went Wrong :)'
     }
 }).then(data => {
+ /* Storing the data from the API in the variables. */
     let avatar = data.avatar_url;
     let name = data.name;
     let bio = data.bio;
