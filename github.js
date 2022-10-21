@@ -1,20 +1,14 @@
-<<<<<<< HEAD
 // /* Declaring the variables. */
-// const GITHUB_NAME_ACCOUNT = '';
-// const GITHUB_FOLLOWERS_COUNT = '';
-// const GITHUB_LOGO_URL = '';
-// const GITHUB_BIO = '';
-=======
-const GITHUB_NAME_ACCOUNT;
-const GITHUB_AVATAR_URL;
-const GITHUB_BIO;
-const GITHUB_COUNT_FOLLOWERS;
+// const GITHUB_NAME_ACCOUNT;
+// const GITHUB_AVATAR_URL;
+// const GITHUB_BIO;
+// const GITHUB_COUNT_FOLLOWERS;
 
 /* Fetching the data from the API and storing it in the variables. */
 let profile = fetch('https://api.github.com/users/E5war5IT', {
     mode: 'no-cors'
 });
->>>>>>> aa7513440657fbc9b34414d4416e84a068781d00
+
 
 // /* Fetching the data from the API and storing it in the variables. */
 // let profile = fetch('https://api.github.com/users/E5war5IT', {
@@ -29,7 +23,7 @@ let profile = fetch('https://api.github.com/users/E5war5IT', {
 //         info.innerHTML = 'Something went Wrong :)'
 //     }
     
-<<<<<<< HEAD
+
 // }).then(data => {
 //  /* Storing the data from the API in the variables. */
 //     let logo = data.avatar_url;
@@ -45,8 +39,8 @@ let profile = fetch('https://api.github.com/users/E5war5IT', {
 
 //     document.querySelector('.github-bio').innerHTML = GITHUB_BIO;
 // });
-=======
-}).then(data => {
+
+profile.then(data => {
  /* Storing the data from the API in the variables. */
     let avatar = data.avatar_url;
     let name = data.name;
@@ -55,4 +49,3 @@ let profile = fetch('https://api.github.com/users/E5war5IT', {
     
     GITHUB_NAME_ACCOUNT = name;
 });
->>>>>>> aa7513440657fbc9b34414d4416e84a068781d00
