@@ -1,5 +1,0 @@
----
-sidebar: auto
----
-
-# profile GitHub
